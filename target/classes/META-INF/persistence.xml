@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+ http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+	version="2.1">
+	<persistence-unit name="projeto-danilo"
+		transaction-type="RESOURCE_LOCAL">
+		<properties>
+			<property name="javax.persistence.jdbc.driver"
+				value="com.microsoft.sqlserver.jdbc.SQLServerDriver"></property>
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:sqlserver://localhost:1433;databaseName=Funcionarios"></property>
+			<property name="javax.persistence.jdbc.user" value="kayque"></property>
+			<property name="javax.persistence.jdbc.password"
+				value="Cintra@1998"></property>
+				<property name="hibernate.dialect" value="org.hibernate.dialect.SQLServerDialect"/>
+			<property name="hibernate.show_sql" value="true"/>
+		</properties>
+	</persistence-unit>
+</persistence>
